@@ -10,3 +10,6 @@ Follow these general steps:
                         6. Set up versioning to keep multiple versions of your data.
                               7. Use Cloud Storage Transfer Service to move data from other storage providers to your Cloud Storage bucket.
                                      8. Monitor and manage your Cloud Storage usage and performance.
+                                     
+                                     
+With its flexible pricing model, you only pay for the storage you use, making it an affordable option for small and large companies alike. 

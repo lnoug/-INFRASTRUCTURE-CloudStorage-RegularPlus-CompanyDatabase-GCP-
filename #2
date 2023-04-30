@@ -1,0 +1,24 @@
+
+5. Configure lifecycle management to automatically delete or archive data that is no longer needed:
+
+gsutil lifecycle set [LIFECYCLE_CONFIG] gs://[BUCKET_NAME]
+
+Replace [LIFECYCLE_CONFIG] with a JSON file that specifies the lifecycle management rules you want to apply to your bucket. For example, you could use the following configuration to delete objects in your bucket that are older than 30 days:
+
+{
+  "rule":
+  [
+    {
+      "action": {"type": "Delete"},
+      "condition": {"age": 30}
+    }
+  ]
+}
+
+This command sets the lifecycle management rules for your bucket. The output will display a success message indicating that the lifecycle configuration has been updated.
+
+6. Set up versioning to keep multiple versions of your data:
+
+gsutil versioning set on gs://[BUCKET_NAME]
+
+This command enables versioning for your bucket, which allows you to keep multiple versions of your data. The output will display a success message indicating that versioning has been enabled for the bucket.
